@@ -6,68 +6,73 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Core surface — institutional near-black with cool bias
+        // Core surface — pure black, units.network style
         ink: {
           0: '#000000',
-          50: '#06070A',
-          100: '#0A0C12',
-          200: '#10131B',
-          300: '#161A25',
-          400: '#1E2331',
-          500: '#262C3D',
+          50: '#050505',
+          100: '#000000',
+          200: '#0d0d0d',
+          300: '#1a1b1f',
+          400: '#22242a',
+          500: '#43464d',
         },
-        // Foreground neutrals
+        // Foreground — bright white spectrum
         bone: {
-          50: '#F5F6F8',
-          100: '#E8EAEF',
-          200: '#C9CDD7',
-          300: '#9AA1B1',
-          400: '#6B7388',
-          500: '#4A5167',
+          50: '#ffffff',
+          100: '#f0f0f0',
+          200: '#c8c8c8',
+          300: '#8a8a8a',
+          400: '#555555',
+          500: '#353535',
         },
-        // Signal — electric cyan/teal accent
+        // Signal — mint green (#9fe0c1), units.network signature accent
         signal: {
-          50: '#E6FBFF',
-          100: '#B8F3FF',
-          200: '#7EE7FF',
-          300: '#3DD6FA',
-          400: '#19B8E0',
-          500: '#0894BA',
-          600: '#066F8C',
+          50: '#edf8f3',
+          100: '#d4f0e4',
+          200: '#b8e8d3',
+          300: '#9fe0c1',
+          400: '#7fd4ae',
+          500: '#5cc49a',
+          600: '#3da07a',
         },
-        // Plasma — secondary warm violet accent for AI / neural motifs
+        // Plasma — electric blue (#419dff)
         plasma: {
-          400: '#9B7BFF',
-          500: '#7B5CFF',
-          600: '#5F40E6',
+          400: '#5fa8ff',
+          500: '#419dff',
+          600: '#2b85f5',
+        },
+        // Gold accent — #edca5c
+        gold: {
+          300: '#f5df8e',
+          400: '#edca5c',
+          500: '#d9b23a',
         },
       },
       fontFamily: {
-        // Display: a refined geometric sans
+        // Display: Unbounded — bold geometric (units.network hero style)
         display: ['var(--font-display)', 'ui-sans-serif', 'system-ui'],
-        // Body
+        // Body: clean geometric sans
         sans: ['var(--font-sans)', 'ui-sans-serif', 'system-ui'],
-        // Monospace for technical credibility
+        // Mono: technical credibility
         mono: ['var(--font-mono)', 'ui-monospace', 'SFMono-Regular', 'Menlo'],
       },
       fontSize: {
-        // Editorial hero scale
-        'display-xl': ['clamp(3.25rem, 8vw, 7rem)', { lineHeight: '0.96', letterSpacing: '-0.035em' }],
-        'display-lg': ['clamp(2.5rem, 5.5vw, 4.5rem)', { lineHeight: '1.02', letterSpacing: '-0.03em' }],
-        'display-md': ['clamp(2rem, 3.6vw, 3rem)', { lineHeight: '1.08', letterSpacing: '-0.025em' }],
+        'display-xl': ['clamp(3rem, 7.5vw, 6.5rem)', { lineHeight: '0.95', letterSpacing: '-0.02em' }],
+        'display-lg': ['clamp(2.25rem, 5vw, 4rem)', { lineHeight: '1.02', letterSpacing: '-0.02em' }],
+        'display-md': ['clamp(1.75rem, 3.2vw, 2.75rem)', { lineHeight: '1.08', letterSpacing: '-0.015em' }],
         'eyebrow': ['0.6875rem', { lineHeight: '1', letterSpacing: '0.18em' }],
       },
       letterSpacing: {
         tightest: '-0.04em',
       },
       backgroundImage: {
-        'grid-fade': 'linear-gradient(180deg, rgba(10,12,18,0) 0%, rgba(10,12,18,0.8) 100%)',
+        'grid-fade': 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%)',
         'noise': "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.06 0'/></filter><rect width='200' height='200' filter='url(%23n)'/></svg>\")",
       },
       boxShadow: {
-        'glow-signal': '0 0 60px -10px rgba(61,214,250,0.35)',
-        'glow-soft': '0 0 80px -20px rgba(123,92,255,0.25)',
-        'inset-line': 'inset 0 1px 0 0 rgba(255,255,255,0.06)',
+        'glow-signal': '0 0 60px -10px rgba(159,224,193,0.4)',
+        'glow-soft': '0 0 80px -20px rgba(65,157,255,0.3)',
+        'inset-line': 'inset 0 1px 0 0 rgba(255,255,255,0.08)',
       },
       animation: {
         'shimmer': 'shimmer 3s linear infinite',

@@ -16,7 +16,7 @@ export function TerminalCard({ className }: { className?: string }) {
   return (
     <div className={`surface noise-overlay ${className ?? ''}`}>
       {/* Window chrome */}
-      <div className="flex items-center justify-between border-b border-white/[0.06] px-4 py-3">
+      <div className="flex items-center justify-between border-b border-white/[0.12] px-4 py-3">
         <div className="flex items-center gap-1.5">
           <span className="h-2.5 w-2.5 rounded-full bg-white/10" />
           <span className="h-2.5 w-2.5 rounded-full bg-white/10" />

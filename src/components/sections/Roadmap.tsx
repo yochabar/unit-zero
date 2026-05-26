@@ -52,8 +52,8 @@ const phases = [
 ];
 
 const stateColor: Record<string, string> = {
-  complete: 'bg-signal-300 text-ink-100',
-  current: 'bg-plasma-400 text-ink-100',
+  complete: 'bg-signal-300 text-black',
+  current: 'bg-plasma-400 text-black',
   next: 'bg-white/20 text-bone-100',
   future: 'bg-white/[0.06] text-bone-400',
 };

@@ -45,9 +45,9 @@ const columns = [
 
 export function Footer() {
   return (
-    <footer className="relative mt-32 border-t border-white/[0.06] bg-ink-50">
+    <footer className="relative mt-32 border-t border-white/[0.12] bg-black">
       {/* Top hairline glow */}
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-signal-300/30 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-signal-300/40 to-transparent" />
 
       <div className="container-edge pb-12 pt-20 md:pt-28">
         {/* Macro brand block */}
@@ -98,13 +98,13 @@ export function Footer() {
 
         {/* Big wordmark */}
         <div className="relative mt-24 select-none overflow-hidden">
-          <div className="bg-gradient-to-b from-bone-50/[0.08] to-transparent bg-clip-text font-display text-[20vw] font-medium leading-none tracking-tightest text-transparent">
+          <div className="bg-gradient-to-b from-white/[0.07] to-transparent bg-clip-text font-display text-[18vw] font-bold leading-none uppercase text-transparent">
             UNIT&nbsp;ZERO
           </div>
         </div>
 
         {/* Legal row */}
-        <div className="mt-12 flex flex-col items-start justify-between gap-6 border-t border-white/[0.06] pt-8 md:flex-row md:items-center">
+        <div className="mt-12 flex flex-col items-start justify-between gap-6 border-t border-white/[0.12] pt-8 md:flex-row md:items-center">
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-[12px] text-bone-400">
             <span>© {new Date().getFullYear()} Unit Zero Foundation.</span>
             <a href="#privacy" className="hover:text-bone-200">Privacy</a>
@@ -122,7 +122,7 @@ export function Footer() {
               <a
                 key={s.l}
                 href={s.h}
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/[0.06] text-[11px] text-bone-300 transition-colors hover:border-white/20 hover:text-bone-50"
+                className="flex h-9 w-9 items-center justify-center rounded-sm border border-white/[0.12] text-[11px] text-bone-300 transition-colors hover:border-signal-300/50 hover:text-signal-300"
                 aria-label={s.l}
               >
                 <span className="font-mono text-[10px]">{s.l[0]}</span>

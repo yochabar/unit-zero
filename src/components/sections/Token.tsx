@@ -28,7 +28,7 @@ const utilities = [
 
 export function Token() {
   return (
-    <section id="token" className="section relative bg-ink-50">
+    <section id="token" className="section relative bg-ink-300/20">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
       <div className="container-edge relative">
@@ -49,8 +49,8 @@ export function Token() {
                       <svg viewBox="0 0 200 200" className="absolute inset-0">
                         <defs>
                           <linearGradient id="tok-grad" x1="0" y1="0" x2="1" y2="1">
-                            <stop offset="0%" stopColor="#3DD6FA" />
-                            <stop offset="100%" stopColor="#7B5CFF" />
+                            <stop offset="0%" stopColor="#9fe0c1" />
+                            <stop offset="100%" stopColor="#419dff" />
                           </linearGradient>
                         </defs>
                         {/* Outer hex */}
@@ -69,12 +69,12 @@ export function Token() {
                         />
                         {/* Concentric rings */}
                         <circle cx="100" cy="100" r="50" fill="none" stroke="rgba(255,255,255,0.08)" />
-                        <circle cx="100" cy="100" r="32" fill="none" stroke="rgba(61,214,250,0.3)" />
+                        <circle cx="100" cy="100" r="32" fill="none" stroke="rgba(159,224,193,0.3)" />
                         <circle cx="100" cy="100" r="6" fill="#FFFFFF" />
                         {/* Corner dots */}
                         {[[100, 10], [180, 55], [180, 145], [100, 190], [20, 145], [20, 55]].map(
                           ([x, y]) => (
-                            <circle key={`${x}-${y}`} cx={x} cy={y} r="2" fill="#3DD6FA" />
+                            <circle key={`${x}-${y}`} cx={x} cy={y} r="2" fill="#9fe0c1" />
                           )
                         )}
                       </svg>
@@ -90,7 +90,7 @@ export function Token() {
                   </div>
 
                   {/* Distribution */}
-                  <div className="grid grid-cols-3 gap-4 border-t border-white/[0.06] pt-6">
+                  <div className="grid grid-cols-3 gap-4 border-t border-white/[0.12] pt-6">
                     {[
                       { l: 'Total supply', v: '1.0B' },
                       { l: 'Circulating', v: '412M' },
@@ -121,10 +121,10 @@ export function Token() {
               description="UNIT0 is the native asset of the network: gas, stake, collateral, and governance — woven through every layer of the protocol."
             />
 
-            <StaggerGroup className="mt-10 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-white/[0.06] bg-white/[0.03] sm:grid-cols-2">
+            <StaggerGroup className="mt-10 grid grid-cols-1 gap-px overflow-hidden rounded-sm border border-white/[0.12] bg-white/[0.05] sm:grid-cols-2">
               {utilities.map((u) => (
                 <StaggerItem key={u.t}>
-                  <div className="h-full bg-ink-100 p-6 md:p-7">
+                  <div className="h-full bg-black p-6 md:p-7">
                     <div className="flex items-center gap-3">
                       <span className="font-display text-[22px] text-signal-300">{u.icon}</span>
                       <h3 className="font-display text-[17px] tracking-tight text-bone-50">{u.t}</h3>

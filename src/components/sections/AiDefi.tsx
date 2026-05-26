@@ -6,7 +6,7 @@ import { SectionHeader } from '@/components/ui/SectionHeader';
 
 export function AiDefi() {
   return (
-    <section id="ai-defi" className="section relative overflow-hidden bg-ink-50">
+    <section id="ai-defi" className="section relative overflow-hidden bg-ink-300/20">
       {/* Top hairline gradient */}
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       <div className="pointer-events-none absolute -left-40 top-1/3 h-[600px] w-[600px] rounded-full bg-signal-300/[0.06] blur-3xl" />
@@ -71,7 +71,7 @@ export function AiDefi() {
                         }}
                         style={{ left: 0, right: 0, width: '100%' }}
                       >
-                        <span className="block h-1.5 w-1.5 rounded-full bg-signal-300 shadow-[0_0_8px_#3DD6FA]" />
+                        <span className="block h-1.5 w-1.5 rounded-full bg-signal-300 shadow-[0_0_8px_#9fe0c1]" />
                       </motion.div>
                     ))}
                   </div>
@@ -89,7 +89,7 @@ export function AiDefi() {
                   </div>
                 </div>
 
-                <div className="mt-8 grid grid-cols-3 gap-4 border-t border-white/[0.06] pt-6">
+                <div className="mt-8 grid grid-cols-3 gap-4 border-t border-white/[0.12] pt-6">
                   {[
                     { l: 'Solver bids', v: '17' },
                     { l: 'Best path slippage', v: '9 bps' },

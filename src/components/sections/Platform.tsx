@@ -63,10 +63,10 @@ export function Platform() {
           description="Unit Zero rethinks the blockchain stack around the assumption that the primary participant is autonomous software. Every layer — identity, execution, settlement, finality — is rebuilt around that premise."
         />
 
-        <StaggerGroup className="mt-20 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-white/[0.06] bg-white/[0.03] md:grid-cols-2 lg:grid-cols-3">
+        <StaggerGroup className="mt-20 grid grid-cols-1 gap-px overflow-hidden rounded-sm border border-white/[0.12] bg-white/[0.05] md:grid-cols-2 lg:grid-cols-3">
           {pillars.map((p) => (
             <StaggerItem key={p.no}>
-              <div className="group relative h-full bg-ink-100 p-7 transition-colors duration-500 hover:bg-ink-200/60 md:p-8">
+              <div className="group relative h-full bg-black p-7 transition-colors duration-500 hover:bg-ink-300/40 md:p-8">
                 <div className="flex items-center justify-between">
                   <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-signal-300">
                     {p.no}

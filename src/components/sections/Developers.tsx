@@ -47,7 +47,7 @@ export function Developers() {
             {/* Inline code snippet */}
             <Reveal delay={0.1}>
               <div className="surface noise-overlay mt-6 overflow-hidden">
-                <div className="flex items-center justify-between border-b border-white/[0.06] px-5 py-3">
+                <div className="flex items-center justify-between border-b border-white/[0.12] px-5 py-3">
                   <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-bone-400">
                     agent.ts — declare an intent
                   </span>
@@ -76,12 +76,12 @@ await treasury.submit(
 
           {/* Right — DX bullets */}
           <div className="lg:col-span-5">
-            <div className="grid gap-px overflow-hidden rounded-2xl border border-white/[0.06] bg-white/[0.03]">
+            <div className="grid gap-px overflow-hidden rounded-sm border border-white/[0.12] bg-white/[0.05]">
               {dx.map((d, i) => (
                 <Reveal key={d.t} delay={0.05 * i}>
-                  <div className="bg-ink-100 p-7">
+                  <div className="bg-black p-7">
                     <div className="flex items-center gap-3">
-                      <span className="flex h-7 w-7 items-center justify-center rounded-full border border-white/10 font-mono text-[10px] text-signal-300">
+                      <span className="flex h-7 w-7 items-center justify-center rounded-sm border border-signal-300/30 font-mono text-[10px] text-signal-300">
                         0{i + 1}
                       </span>
                       <h3 className="font-display text-[20px] tracking-tight text-bone-50">{d.t}</h3>

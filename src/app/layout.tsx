@@ -1,19 +1,19 @@
 import type { Metadata, Viewport } from 'next';
-import { Instrument_Serif, Inter_Tight, JetBrains_Mono } from 'next/font/google';
+import { Unbounded, Inter_Tight, JetBrains_Mono } from 'next/font/google';
 import '@/styles/globals.css';
 import { siteConfig } from '@/lib/site';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 
-// Display: a tight modern grotesque with editorial proportions
-const display = Inter_Tight({
+// Display: Unbounded — bold geometric (units.network signature)
+const display = Unbounded({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-display',
   display: 'swap',
 });
 
-// Body: same family, used as a system fallback chain root
+// Body: clean geometric sans
 const sans = Inter_Tight({
   subsets: ['latin'],
   weight: ['300', '400', '500'],
@@ -21,7 +21,7 @@ const sans = Inter_Tight({
   display: 'swap',
 });
 
-// Mono — technical credibility
+// Mono: Geist Mono style — technical terminal aesthetic
 const mono = JetBrains_Mono({
   subsets: ['latin'],
   weight: ['400', '500'],
@@ -29,16 +29,8 @@ const mono = JetBrains_Mono({
   display: 'swap',
 });
 
-// Optional editorial accent serif (used sparingly in pull quotes)
-const serif = Instrument_Serif({
-  subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-serif',
-  display: 'swap',
-});
-
 export const viewport: Viewport = {
-  themeColor: '#0A0C12',
+  themeColor: '#000000',
   width: 'device-width',
   initialScale: 1,
 };
@@ -88,12 +80,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${display.variable} ${sans.variable} ${mono.variable} ${serif.variable} dark`}
+      className={`${display.variable} ${sans.variable} ${mono.variable} dark`}
     >
-      <body className="min-h-screen bg-ink-100 text-bone-100">
+      <body className="min-h-screen bg-black text-bone-100">
         <a
           href="#main"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-signal-300 focus:px-3 focus:py-2 focus:text-ink-100"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-sm focus:bg-signal-300 focus:px-3 focus:py-2 focus:text-black"
         >
           Skip to content
         </a>

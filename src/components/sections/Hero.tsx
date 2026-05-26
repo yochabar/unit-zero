@@ -14,7 +14,7 @@ export function Hero() {
         <AgentMesh className="absolute left-1/2 top-1/2 h-[800px] w-[1200px] -translate-x-1/2 -translate-y-[44%] opacity-90" />
       </div>
       {/* Bottom ink fade so content below feels grounded */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-64 bg-gradient-to-b from-transparent to-ink-100" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-64 bg-gradient-to-b from-transparent to-black" />
 
       <div className="container-edge relative z-10">
         {/* Sub-eyebrow announcement bar */}

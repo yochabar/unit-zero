@@ -36,11 +36,11 @@ export function Partners() {
 
         {/* Logo wall */}
         <Reveal delay={0.1}>
-          <div className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/[0.06] bg-white/[0.03] sm:grid-cols-3 lg:grid-cols-4">
+          <div className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-sm border border-white/[0.12] bg-white/[0.05] sm:grid-cols-3 lg:grid-cols-4">
             {partners.map((p) => (
               <div
                 key={p}
-                className="group flex h-24 items-center justify-center bg-ink-100 transition-colors duration-300 hover:bg-ink-200/60"
+                className="group flex h-24 items-center justify-center bg-black transition-colors duration-300 hover:bg-ink-300/40"
               >
                 <span className="font-display text-[15px] tracking-tight text-bone-400 transition-colors group-hover:text-bone-100">
                   {p}

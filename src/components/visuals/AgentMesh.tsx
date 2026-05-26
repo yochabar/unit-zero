@@ -72,14 +72,14 @@ export function AgentMesh({ className }: { className?: string }) {
     >
       <defs>
         <radialGradient id="mesh-center" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#3DD6FA" stopOpacity="0.45" />
-          <stop offset="40%" stopColor="#7B5CFF" stopOpacity="0.15" />
-          <stop offset="100%" stopColor="#7B5CFF" stopOpacity="0" />
+          <stop offset="0%" stopColor="#9fe0c1" stopOpacity="0.35" />
+          <stop offset="40%" stopColor="#419dff" stopOpacity="0.12" />
+          <stop offset="100%" stopColor="#419dff" stopOpacity="0" />
         </radialGradient>
         <linearGradient id="edge-grad" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stopColor="#3DD6FA" stopOpacity="0" />
-          <stop offset="50%" stopColor="#3DD6FA" stopOpacity="1" />
-          <stop offset="100%" stopColor="#3DD6FA" stopOpacity="0" />
+          <stop offset="0%" stopColor="#9fe0c1" stopOpacity="0" />
+          <stop offset="50%" stopColor="#9fe0c1" stopOpacity="1" />
+          <stop offset="100%" stopColor="#9fe0c1" stopOpacity="0" />
         </linearGradient>
         <filter id="node-glow" x="-50%" y="-50%" width="200%" height="200%">
           <feGaussianBlur stdDeviation="2" />
@@ -118,12 +118,12 @@ export function AgentMesh({ className }: { className?: string }) {
                   y1={e.y1}
                   x2={e.x2}
                   y2={e.y2}
-                  stroke="rgba(61,214,250,0.35)"
+                  stroke="rgba(159,224,193,0.35)"
                   strokeWidth="0.8"
                 />
                 <motion.circle
                   r="1.6"
-                  fill="#3DD6FA"
+                  fill="#9fe0c1"
                   initial={{ opacity: 0 }}
                   animate={{
                     cx: [e.x1, e.x2],
@@ -137,7 +137,7 @@ export function AgentMesh({ className }: { className?: string }) {
                     repeatDelay: 2,
                     ease: 'easeInOut',
                   }}
-                  style={{ filter: 'drop-shadow(0 0 4px #3DD6FA)' }}
+                  style={{ filter: 'drop-shadow(0 0 4px #9fe0c1)' }}
                 />
               </g>
             );
@@ -154,7 +154,7 @@ export function AgentMesh({ className }: { className?: string }) {
                     cx={n.x}
                     cy={n.y}
                     r={n.r + 4}
-                    fill="#3DD6FA"
+                    fill="#9fe0c1"
                     opacity="0.2"
                     filter="url(#node-glow)"
                     animate={{ scale: [1, 1.4, 1], opacity: [0.2, 0.05, 0.2] }}
@@ -168,7 +168,7 @@ export function AgentMesh({ className }: { className?: string }) {
                   cx={n.x}
                   cy={n.y}
                   r={n.r}
-                  fill={n.ring <= 2 ? '#3DD6FA' : 'rgba(232,234,239,0.55)'}
+                  fill={n.ring <= 2 ? '#9fe0c1' : 'rgba(255,255,255,0.4)'}
                   opacity={n.ring <= 2 ? 0.85 : 0.45}
                 />
               )}

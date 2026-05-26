@@ -29,7 +29,7 @@ export function Navbar() {
       className={cn(
         'fixed inset-x-0 top-0 z-50 transition-all duration-500',
         scrolled
-          ? 'border-b border-white/[0.06] bg-ink-100/70 backdrop-blur-xl'
+          ? 'border-b border-white/[0.12] bg-black/80 backdrop-blur-xl'
           : 'border-b border-transparent'
       )}
     >
@@ -43,7 +43,7 @@ export function Navbar() {
             <a
               key={item.href}
               href={item.href}
-              className="rounded-full px-3.5 py-2 font-mono text-[11px] uppercase tracking-[0.16em] text-bone-300 transition-colors hover:text-bone-50"
+              className="px-3.5 py-2 font-mono text-[11px] uppercase tracking-[0.16em] text-bone-300 transition-colors hover:text-signal-300"
             >
               {item.label}
             </a>
@@ -51,7 +51,7 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <a href="#docs" className="font-mono text-[11px] uppercase tracking-[0.16em] text-bone-300 hover:text-bone-50">
+          <a href="#docs" className="font-mono text-[11px] uppercase tracking-[0.16em] text-bone-300 hover:text-signal-300">
             Docs
           </a>
           <span className="h-4 w-px bg-white/10" aria-hidden />
@@ -66,7 +66,7 @@ export function Navbar() {
         {/* Mobile menu trigger */}
         <button
           onClick={() => setOpen((v) => !v)}
-          className="relative z-10 flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.02] md:hidden"
+          className="relative z-10 flex h-9 w-9 items-center justify-center rounded-sm border border-white/[0.15] bg-white/[0.02] md:hidden"
           aria-expanded={open}
           aria-label={open ? 'Close menu' : 'Open menu'}
         >
@@ -108,7 +108,7 @@ export function Navbar() {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -8, opacity: 0 }}
               transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-              className="fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto border-t border-white/[0.06] bg-ink-100/95 backdrop-blur-2xl"
+              className="fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto border-t border-white/[0.12] bg-black/95 backdrop-blur-2xl"
             >
               <div className="container-edge flex flex-col gap-1 pb-8 pt-6">
                 {nav.map((item, i) => (
