@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { AgentMesh } from '@/components/visuals/AgentMesh';
 import { GridBackdrop } from '@/components/visuals/GridBackdrop';
-import { heroStats } from '@/lib/site';
+import { LiveStats } from '@/components/sections/LiveStats';
 
 export function Hero() {
   return (
@@ -13,11 +13,11 @@ export function Hero() {
       <div className="pointer-events-none absolute inset-0 -z-10">
         <AgentMesh className="absolute left-1/2 top-1/2 h-[800px] w-[1200px] -translate-x-1/2 -translate-y-[44%] opacity-90" />
       </div>
-      {/* Bottom ink fade so content below feels grounded */}
+      {/* Bottom fade */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-64 bg-gradient-to-b from-transparent to-black" />
 
       <div className="container-edge relative z-10">
-        {/* Sub-eyebrow announcement bar */}
+        {/* Announcement bar */}
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
@@ -25,13 +25,15 @@ export function Hero() {
           className="mb-10 flex justify-center"
         >
           <a
-            href="#announcement"
-            className="group flex items-center gap-3 rounded-full border border-white/[0.08] bg-white/[0.02] py-1.5 pl-1.5 pr-4 font-mono text-[11px] text-bone-300 backdrop-blur-md transition-colors hover:border-white/20 hover:text-bone-100"
+            href="https://explorer.unit0.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-3 rounded-full border border-white/[0.1] bg-white/[0.02] py-1.5 pl-1.5 pr-4 font-mono text-[11px] text-bone-300 backdrop-blur-md transition-colors hover:border-signal-300/30 hover:text-bone-100"
           >
             <span className="rounded-full bg-signal-300/15 px-2.5 py-1 text-[10px] uppercase tracking-[0.18em] text-signal-300">
-              New
+              Live
             </span>
-            <span>Agent SDK v0.4 · TEE-attested execution is live</span>
+            <span>Unit Zero Mainnet · explorer.unit0.dev</span>
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden className="opacity-60 transition-transform group-hover:translate-x-0.5">
               <path d="M2 5H8M8 5L5 2M8 5L5 8" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
             </svg>
@@ -83,43 +85,13 @@ export function Hero() {
           </motion.div>
         </div>
 
-        {/* Stats strip */}
+        {/* Live blockchain stats — polled every 30s from explorer.unit0.dev */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.75, ease: [0.22, 1, 0.36, 1] }}
-          className="relative mx-auto mt-24 max-w-5xl md:mt-32"
         >
-          <div className="surface relative grid grid-cols-2 divide-white/[0.06] md:grid-cols-4 md:divide-x">
-            {heroStats.map((s, i) => (
-              <div
-                key={s.label}
-                className={`relative p-6 md:p-7 ${i >= 2 ? 'border-t md:border-t-0' : ''} ${i % 2 === 1 ? 'border-l md:border-l-0' : ''} border-white/[0.06]`}
-              >
-                <div className="flex items-baseline gap-1">
-                  <span className="font-display text-3xl font-medium tracking-tight text-bone-50 md:text-[40px]">
-                    {s.value}
-                  </span>
-                  <span className="font-mono text-[12px] text-signal-300">{s.suffix}</span>
-                </div>
-                <div className="mt-3 font-mono text-[10px] uppercase tracking-[0.18em] text-bone-400">
-                  {s.label}
-                </div>
-                <div className="mt-1 text-[12px] text-bone-300">{s.sub}</div>
-              </div>
-            ))}
-          </div>
-
-          {/* Bottom data-feed marquee */}
-          <div className="mt-6 flex items-center gap-3 font-mono text-[11px] text-bone-400">
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inset-0 animate-ping rounded-full bg-signal-300/60" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-signal-300" />
-            </span>
-            <span className="uppercase tracking-[0.18em]">Live · agent intents settling</span>
-            <span className="h-px flex-1 bg-white/5" />
-            <span className="hidden sm:inline">block #18,442,109</span>
-          </div>
+          <LiveStats />
         </motion.div>
       </div>
     </section>
