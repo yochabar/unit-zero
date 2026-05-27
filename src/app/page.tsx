@@ -1,4 +1,5 @@
 import { Hero } from '@/components/sections/Hero';
+import { Xyper } from '@/components/sections/Xyper';
 import { Narrative } from '@/components/sections/Narrative';
 import { WhyDifferent } from '@/components/sections/WhyDifferent';
 import { Platform } from '@/components/sections/Platform';
@@ -16,6 +17,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <Xyper />
       <Narrative />
       <WhyDifferent />
       <Platform />
