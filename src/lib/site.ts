@@ -10,7 +10,7 @@ export const siteConfig = {
 export const nav = [
   { label: 'Platform', href: '#platform' },
   { label: 'Agents', href: '#agents' },
-  { label: 'Ecosystem', href: '#ecosystem' },
+  { label: 'Ecosystem', href: '/ecosystem' },
   { label: 'Developers', href: '#developers' },
   { label: 'Token', href: '#token' },
   { label: 'Roadmap', href: '#roadmap' },

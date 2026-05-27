@@ -93,7 +93,7 @@ export function Ecosystem() {
             description="Unit Zero hosts the protocols that make the agent economy run. Not random dApps — modular, machine-scale infrastructure that composes."
           />
           <Reveal delay={0.2}>
-            <a href="#all-projects" className="btn-ghost flex-shrink-0">
+            <a href="/ecosystem" className="btn-ghost flex-shrink-0">
               Browse all 60+ projects
               <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden>
                 <path d="M2 5H8M8 5L5 2M8 5L5 8" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
