@@ -1,5 +1,6 @@
 import { Hero } from '@/components/sections/Hero';
 import { Xyper } from '@/components/sections/Xyper';
+import { X402Banner } from '@/components/sections/X402Banner';
 import { Narrative } from '@/components/sections/Narrative';
 import { WhyDifferent } from '@/components/sections/WhyDifferent';
 import { Platform } from '@/components/sections/Platform';
@@ -18,6 +19,7 @@ export default function HomePage() {
     <>
       <Hero />
       <Xyper />
+      <X402Banner />
       <Narrative />
       <WhyDifferent />
       <Platform />
