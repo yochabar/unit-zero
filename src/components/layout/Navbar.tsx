@@ -55,7 +55,7 @@ export function Navbar() {
             Docs
           </a>
           <span className="h-4 w-px bg-white/10" aria-hidden />
-          <a href="#launch" className="btn-primary !py-2 !px-4">
+          <a href="/launch" className="btn-primary !py-2 !px-4">
             Launch App
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden>
               <path d="M2 8L8 2M8 2H3M8 2V7" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
@@ -128,7 +128,7 @@ export function Navbar() {
                   </motion.a>
                 ))}
                 <div className="mt-6 flex flex-col gap-3">
-                  <a href="#launch" className="btn-primary w-full justify-center">
+                  <a href="/launch" className="btn-primary w-full justify-center">
                     Launch App
                   </a>
                   <a href="#docs" className="btn-ghost w-full justify-center">

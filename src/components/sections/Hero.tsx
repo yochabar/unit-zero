@@ -70,7 +70,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.55 }}
             className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row"
           >
-            <a href="#launch" className="btn-primary">
+            <a href="/launch" className="btn-primary">
               Launch the network
               <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden>
                 <path d="M2 5H8M8 5L5 2M8 5L5 8" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
