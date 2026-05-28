@@ -34,7 +34,7 @@ export function Navbar() {
       )}
     >
       <div className="container-edge flex h-16 items-center justify-between md:h-[72px]">
-        <a href="#top" className="relative z-10" aria-label="Unit Zero — Home">
+        <a href="/" className="relative z-10" aria-label="Unit Zero — Home">
           <Logo />
         </a>
 
@@ -56,7 +56,7 @@ export function Navbar() {
           </a>
           <span className="h-4 w-px bg-white/10" aria-hidden />
           <a href="/launch" className="btn-primary !py-2 !px-4">
-            Launch App
+            Agent Marketplace
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden>
               <path d="M2 8L8 2M8 2H3M8 2V7" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
             </svg>
@@ -129,7 +129,7 @@ export function Navbar() {
                 ))}
                 <div className="mt-6 flex flex-col gap-3">
                   <a href="/launch" className="btn-primary w-full justify-center">
-                    Launch App
+                    Agent Marketplace
                   </a>
                   <a href="#docs" className="btn-ghost w-full justify-center">
                     Read the docs
