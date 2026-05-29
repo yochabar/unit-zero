@@ -186,7 +186,7 @@ const projects: Project[] = [
     cat: 'Tools & Infra',
     blurb: 'Community token launchpad purpose-built for the Unit Zero ecosystem and its native projects.',
     logo: null,
-    href: 'https://unit0.dev',
+    href: 'https://www.units.network',
   },
 
   // ── Wallets ──
@@ -420,7 +420,7 @@ export function EcosystemProjects() {
             </div>
             <div className="flex shrink-0 flex-wrap gap-3">
               <a
-                href="https://unit0.dev"
+                href="https://www.units.network/building-on-units-network"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
@@ -431,7 +431,7 @@ export function EcosystemProjects() {
                 </svg>
               </a>
               <a
-                href="https://docs.unit0.dev"
+                href="https://docs.units.network"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-ghost"

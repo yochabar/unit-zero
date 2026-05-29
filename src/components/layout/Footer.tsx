@@ -4,30 +4,30 @@ const columns = [
   {
     title: 'Network',
     links: [
-      { label: 'Architecture', href: '#platform' },
-      { label: 'Consensus', href: '#consensus' },
-      { label: 'Agent runtime', href: '#agents' },
-      { label: 'Performance', href: '#performance' },
-      { label: 'Token', href: '#token' },
+      { label: 'Token (UNIT0)', href: 'https://www.units.network/the-unit0-token', external: true },
+      { label: 'Explorer', href: 'https://explorer.unit0.dev', external: true },
+      { label: 'Staking', href: 'https://docs.units.network/guides/staking', external: true },
+      { label: 'DAO', href: 'https://dao.unit0.dev', external: true },
+      { label: 'Score', href: 'https://score.units.network/', external: true },
     ],
   },
   {
     title: 'Build',
     links: [
-      { label: 'Documentation', href: 'https://docs.unit0.dev', external: true },
-      { label: 'Agent SDK', href: 'https://docs.unit0.dev', external: true },
-      { label: 'Explorer', href: 'https://explorer.unit0.dev', external: true },
+      { label: 'Documentation', href: 'https://docs.units.network', external: true },
+      { label: 'Agent SDK', href: 'https://docs.units.network', external: true },
       { label: 'Xyper Market', href: 'https://xyper.market', external: true },
       { label: 'x402 Protocol', href: 'https://www.x402.org', external: true },
+      { label: 'Agent Marketplace', href: '/launch' },
     ],
   },
   {
     title: 'Ecosystem',
     links: [
       { label: 'Projects', href: '/ecosystem' },
-      { label: 'Partners', href: '#partners' },
-      { label: 'Token', href: '#token' },
-      { label: 'Roadmap', href: '#roadmap' },
+      { label: 'DappRadar', href: 'https://dappradar.com/chain/unit0', external: true },
+      { label: 'DefiLlama', href: 'https://defillama.com/chain/UNIT0', external: true },
+      { label: 'CoinGecko', href: 'https://coingecko.com/en/coins/unit0', external: true },
       { label: 'Waves Network', href: 'https://waves.tech', external: true },
     ],
   },
@@ -162,8 +162,8 @@ export function Footer() {
         <div className="mt-12 flex flex-col items-start justify-between gap-6 border-t border-white/[0.12] pt-8 md:flex-row md:items-center">
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-[12px] text-bone-400">
             <span>© {new Date().getFullYear()} Unit Zero Foundation.</span>
-            <a href="#privacy" className="hover:text-bone-200">Privacy</a>
-            <a href="#terms" className="hover:text-bone-200">Terms</a>
+            <a href="https://docs.units.network/how-it-works/privacy-notice" target="_blank" rel="noopener noreferrer" className="hover:text-bone-200">Privacy</a>
+            <a href="https://docs.units.network/how-it-works/terms-and-conditions" target="_blank" rel="noopener noreferrer" className="hover:text-bone-200">Terms</a>
             <a href="https://waves.tech" target="_blank" rel="noopener noreferrer" className="hover:text-bone-200">
               Built on Waves
             </a>

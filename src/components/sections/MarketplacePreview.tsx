@@ -333,7 +333,7 @@ export function MarketplacePreview() {
                 <path d="M2 5H8M8 5L5 2M8 5L5 8" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
               </svg>
             </a>
-            <a href="https://docs.unit0.dev" target="_blank" rel="noopener noreferrer" className="btn-ghost">
+            <a href="https://docs.units.network" target="_blank" rel="noopener noreferrer" className="btn-ghost">
               Deploy an Agent
             </a>
           </motion.div>

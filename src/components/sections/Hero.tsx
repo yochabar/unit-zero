@@ -76,7 +76,7 @@ export function Hero() {
                 <path d="M2 5H8M8 5L5 2M8 5L5 8" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
               </svg>
             </a>
-            <a href="#developers" className="btn-ghost">
+            <a href="https://docs.units.network" target="_blank" rel="noopener noreferrer" className="btn-ghost">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden>
                 <path d="M4 2L8 6L4 10" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
               </svg>

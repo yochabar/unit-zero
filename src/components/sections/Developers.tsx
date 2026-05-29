@@ -94,10 +94,10 @@ await treasury.submit(
 
             <Reveal delay={0.3}>
               <div className="mt-6 flex flex-wrap items-center gap-3">
-                <a href="#docs" className="btn-primary">
+                <a href="https://docs.units.network" target="_blank" rel="noopener noreferrer" className="btn-primary">
                   Read the docs
                 </a>
-                <a href="#sdk" className="btn-ghost">
+                <a href="https://docs.units.network" target="_blank" rel="noopener noreferrer" className="btn-ghost">
                   npm install @unitzero/sdk
                 </a>
               </div>

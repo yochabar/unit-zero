@@ -204,8 +204,8 @@ export function Token() {
 
             <Reveal delay={0.3}>
               <div className="mt-8 flex flex-wrap items-center gap-3">
-                <a href="#tokenomics" className="btn-ghost">Tokenomics paper</a>
-                <a href="#stake" className="btn-ghost">Stake UNIT0</a>
+                <a href="https://www.units.network/the-unit0-token" target="_blank" rel="noopener noreferrer" className="btn-ghost">Tokenomics paper</a>
+                <a href="https://docs.units.network/guides/staking" target="_blank" rel="noopener noreferrer" className="btn-ghost">Stake UNIT0</a>
               </div>
             </Reveal>
           </div>

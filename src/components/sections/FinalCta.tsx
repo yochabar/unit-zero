@@ -37,13 +37,13 @@ export function FinalCta() {
 
           <Reveal delay={0.3}>
             <div className="mt-12 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <a href="#start" className="btn-primary !px-7 !py-3.5 text-[12px]">
+              <a href="/launch" className="btn-primary !px-7 !py-3.5 text-[12px]">
                 Start building
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden>
                   <path d="M2 5H8M8 5L5 2M8 5L5 8" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
                 </svg>
               </a>
-              <a href="#docs" className="btn-ghost !px-7 !py-3.5 text-[12px]">
+              <a href="https://docs.units.network" target="_blank" rel="noopener noreferrer" className="btn-ghost !px-7 !py-3.5 text-[12px]">
                 Read the documentation
               </a>
             </div>

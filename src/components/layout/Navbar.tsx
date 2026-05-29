@@ -51,7 +51,7 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <a href="#docs" className="font-mono text-[11px] uppercase tracking-[0.16em] text-bone-300 hover:text-signal-300">
+          <a href="https://docs.units.network" className="font-mono text-[11px] uppercase tracking-[0.16em] text-bone-300 hover:text-signal-300">
             Docs
           </a>
           <span className="h-4 w-px bg-white/10" aria-hidden />
@@ -131,7 +131,7 @@ export function Navbar() {
                   <a href="/launch" className="btn-primary w-full justify-center">
                     Agent Marketplace
                   </a>
-                  <a href="#docs" className="btn-ghost w-full justify-center">
+                  <a href="https://docs.units.network" className="btn-ghost w-full justify-center">
                     Read the docs
                   </a>
                 </div>
